@@ -22,4 +22,6 @@ http://localhost:3000 or you can get the container IP: docker inspect CONTAINER 
 
 In my case it is: "IPAddress": "172.17.0.2"
 
+rails server -b 172.17.0.2
+
 So, just open the browser and point it to http://172.17.0.2:3000 and you will see the rails app running :)
