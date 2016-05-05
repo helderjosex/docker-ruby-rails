@@ -12,7 +12,7 @@ $ docker images
 
 - Let’s create a container and run the app
 
-$ docker run -d -p 3000:3000 rails-app:1.0
+$ docker run -it -v /path/to/www/:/var/www/ -p 3000:3000 rails-app:1.0
 
 - You can just open your browser at: 
 
