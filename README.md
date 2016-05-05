@@ -4,7 +4,7 @@ Usage
 
 - We need to build and run the web app
 
-$ docker build -t ruby-app:1.0 .
+$ docker build -t ruby-rails:1.0 .
 
 - Later we can check the image using:
 
@@ -12,7 +12,7 @@ $ docker images
 
 - Let’s create a container and run the app
 
-$ docker run -it -v /path/to/www/:/var/www/ -p 3000:3000 rails-app:1.0
+$ docker run -it -v /path/to/www/:/var/www/ -p 3000:3000 rails-rails:1.0
 
 - You can just open your browser at: 
 
