@@ -15,7 +15,7 @@ $ docker images
 $ docker run -d -p 3000:3000 rails-app:1.0
 
 - You can just open your browser at: 
-- 
+
 http://localhost:3000 or you can get the container IP: docker inspect CONTAINER ID | grep IPAddress
 
 (you can also run docker inspect --format '{{.NetworkSettings.IPAddress}}' CONTAINER ID )
