@@ -1,4 +1,4 @@
-# Run your Rails App on Docker
+# Run your RubyOnRails on Docker
 
 Usage
 
