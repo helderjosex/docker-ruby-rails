@@ -38,9 +38,6 @@ RUN gem install bundler
 
 ## Install Rails
 RUN apt-get install -y software-properties-common
-#RUN add-apt-repository ppa:chris-lea/node.js
-#RUN curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
-#RUN apt-get update
 
 RUN apt-get install -y nodejs
 
@@ -54,6 +51,8 @@ WORKDIR /var/www/
 VOLUME /var/www/
 
 CMD ["/bin/bash"]
+# Specify the default command for when the container runs
+#CMD ["rails", "server", "--binding", "0.0.0.0"]
 
 # Expose ports
 EXPOSE 3000
